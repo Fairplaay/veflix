@@ -1,3 +1,7 @@
 <?php
+require_once 'controllers/Autoload.php';
+$autoload= new Autoload();
 
-echo "hola desde php";
+$route=(isset($_GET['r']))? $_GET['r']: 'home';
+$veflix=new Router($route);
+
