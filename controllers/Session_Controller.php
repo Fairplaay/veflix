@@ -12,7 +12,9 @@ class Session_Controller
 		return $this->session->validateUser($user,$pass);
 	}
 	public function logout()
-	{
-		
+	{  
+		session_start();
+		session_destroy();
+		header('Location: ./');
 	}
 }

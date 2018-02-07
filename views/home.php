@@ -1,4 +1,4 @@
-<?php
+<!--
 
 $template='
 <div class="row">
@@ -21,5 +21,28 @@ $_SESSION['name'],
 $_SESSION['email'],
 $_SESSION['birthday'],
 $_SESSION['role']);
-?>
+-->
+<table class="responsive-card-table unstriped">
+  <thead>
+    <tr>
+      <th>Status_id</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Status_id">Bruce</td>
+      <td data-label="Status">Wayn</td>
+    </tr>
+  </tbody>
+</table>
+
+<button type="button" class="button primary ">Enviar</button>
+<button type="button" class="button secondary">Enviar</button>
+<button type="button" class="button success">Enviar</button>
+<button type="button" class="button alert">Enviar</button>
+<button type="button" class="button warning">Enviar</button>
+
+
+
 

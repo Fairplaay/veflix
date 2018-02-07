@@ -15,28 +15,28 @@
 <body>
   <header>
     <!-- Menu -->
+<?php if ($_SESSION['ok']){ ?>
     <div id="header-container" class="row align-middle">
       <div class="small-12 large-4">
         <h1 class="text-center">VEFLIX</h1>
       </div>
       <div class="large-8">
         <ul class="menu medium-text-right">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">MovieSeries</a></li>
-          <li><a href="#">Usuarios</a></li>
-          <li><a href="#">status</a></li>
-          <li><a href="#">Salir</a></li>
+          <li><a href="./">Inicio</a></li>
+          <li><a href="index.php?r=movieseries">MovieSeries</a></li>
+          <li><a href="index.php?r=users">Usuarios</a></li>
+          <li><a href="index.php?r=status">status</a></li>
+          <li><a href="index.php?r=salir">Salir</a></li>
         </ul>
       </div>
   </header>
     <!-- /menu -->
+<?php }
+else { ?>
+  <div id="header-container" class="row align-middle">
+    <div class="small-12">
+      <h1 class="text-center">VEFLIX</h1>
+  </div>
+<?php };
+?>
 <div class="row align-center">
-
-
-
-        <script src="./public/js/vendor/jquery.js"></script>
-        <script src="./public/js/vendor/what-input.js"></script>
-        <script src="./public/js/vendor/foundation.js"></script>
-        <script src="./public/veflix/app.js"></script>
-    </body>
-</html>

@@ -1,8 +1,5 @@
 <?php
 
-/**
-*
-*/
 class Router
 {
 	public $route;
@@ -15,8 +12,37 @@ class Router
 
 		if ($_SESSION['ok']) {
 			# aqui va la programacionde nuestra webapp
-			$contolador=new ViewController();
-			$contolador->loadView('home');
+			$this->route=(isset($_GET['r']))? $_GET['r']: 'home';
+			$controlador=new ViewController();
+			switch ($this->route) {
+				case 'home':
+					# code...
+					$controlador->loadView('home');
+					break;
+				case 'movieseries':
+					# code...
+					$controlador->loadView('movieseries');
+					break;
+				case 'users':
+					# code...
+					$controlador->loadView('users');
+					break;
+				case 'status':
+					# code...
+					$controlador->loadView('status');
+					break;
+				case 'salir':
+					# code...
+					$userSession=new Session_Controller();
+					$userSession->logout();
+					break;
+				default:
+					# code...
+					$contolador->loadView('error404');
+					break;
+			}
+
+
 		}else{
 			if (!isset($_POST['user']) && !isset($_POST['pass'])) {
 				# muestra un formulario de login
