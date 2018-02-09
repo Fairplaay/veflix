@@ -2,7 +2,10 @@ Options +FollowSymlinks
 RewriteEngine On 
 RewriteBase /bextlan/veflix/
 RewriteCond %{SCRIPT_FILENAME} !-f
+<<<<<<< HEAD
 RewriteCond %{SCRIPT_FILENAME} !-d
+=======
+>>>>>>> 452d137a020939cfbea1db5de302ec901b1d4392
 RewriteRule ^(.*)$ index.php?r=$1 [L]
 
     
