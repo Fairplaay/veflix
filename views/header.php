@@ -23,9 +23,9 @@
       <div class="large-8">
         <ul class="menu medium-text-right">
           <li><a href="./">Inicio</a></li>
-          <li><a href="index.php?r=movieseries">MovieSeries</a></li>
-          <li><a href="index.php?r=users">Usuarios</a></li>
-          <li><a href="index.php?r=status">status</a></li>
+          <li><a href="movieseries">MovieSeries</a></li>
+          <li><a href="users">Usuarios</a></li>
+          <li><a href="status">status</a></li>
           <li><a href="index.php?r=salir">Salir</a></li>
         </ul>
       </div>
@@ -39,4 +39,5 @@ else { ?>
   </div>
 <?php };
 ?>
+</div>
 <div class="row align-center">

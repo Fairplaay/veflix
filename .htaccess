@@ -1,7 +1,8 @@
 Options +FollowSymlinks
-RewriteEngine
+RewriteEngine On 
 RewriteBase /bextlan/veflix/
-RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
-Rewrite ^(.*)$ index.php?r=$1 [L]
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?r=$1 [L]
 
+    

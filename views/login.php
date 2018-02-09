@@ -1,3 +1,4 @@
+<div class="text-center">
 <form id="form" novalidate data-abide action="" method="POST">
   <div class="translucent-form-overlay">
     
@@ -41,5 +42,5 @@ style="display: none;">
 
   </div>
 </form>
-
+</div>
 
