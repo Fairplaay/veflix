@@ -25,11 +25,37 @@ class Router
 					break;
 				case 'users':
 					# code...
-					$controlador->loadView('users');
+					if (!isset($_POST['r'])) {
+						# code...
+						$controlador->loadView('users');
+					}elseif ($_POST['r'] == 'user-add') {
+						# code...
+						$controlador->loadView('user-add');
+					}elseif ($_POST['r'] == 'user-edit') {
+						# code...
+						$controlador->loadView('user-edit');
+					}elseif ($_POST['r'] == 'user-del') {
+						# code...
+						$controlador->loadView('user-del');
+					}
 					break;
 				case 'status':
 					# code...
-					$controlador->loadView('status');
+					#si no esta definida la variable r del formulario 
+					#carga el status.php 
+					if (!isset($_POST['r'])) {
+						# code...
+						$controlador->loadView('status');
+					}elseif ($_POST['r'] == 'status-add') {
+						# code...
+						$controlador->loadView('status-add');
+					}elseif ($_POST['r'] == 'status-edit') {
+						# code...
+						$controlador->loadView('status-edit');
+					}elseif ($_POST['r'] == 'status-del') {
+						# code...
+						$controlador->loadView('status-del');
+					}
 					break;
 				case 'salir':
 					# code...
@@ -38,7 +64,7 @@ class Router
 					break;
 				default:
 					# code...
-					$contolador->loadView('error404');
+					$controlador->loadView('error404');
 					break;
 			}
 

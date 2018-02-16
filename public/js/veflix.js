@@ -11,3 +11,10 @@ off_canvas.find('li').click(function (ev) {
 
 	off_canvas.foundation('close')	
 })
+
+function reloadPage(url) {
+	// body...
+	setTimeout(function(){
+		window.location.href=url
+	}, 3000)
+}

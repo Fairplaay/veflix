@@ -41,7 +41,7 @@ if (empty($status)) {
 	      	<form action="" method="POST">
 				<input type="hidden" name="r" value="status-del">
 				<input type="hidden" name="status_id" value="'.$status[$n]['status_id'].'">
-				<input type="submit" class="button alert" value="ELiminar"> 
+				<input type="submit" class="button alert" value="Eliminar"> 
 	      	</form>
 	      </td>
 

@@ -1,18 +1,20 @@
-<div class="text-center">
+<?php
+print('<div class="text-center">
 <form id="form" novalidate data-abide action="" method="POST">
   <div class="translucent-form-overlay">
     
-    <h3>Ingresar</h3>
+    <h3>Ingresar</h3>');
 
-<?php 
-if(isset($_GET['error'])){ ?>
-    <div data-abide-error class="alert callout error-container">
-        <p><i class="fi-alert"></i><?php echo $_GET["error"]; ?></p>
-    </div>
-<?php } ?>
+if(isset($_GET['error'])){
+
+    $template=('<div data-abide-error class="alert callout error-container">
+        <p><i class="fi-alert"></i>%s</p>
+    </div>');
+    printf($template,$_GET["error"]);
+}
  
 
-<div data-abide-error class="alert callout error-container" 
+print('<div data-abide-error class="alert callout error-container" 
 style="display: none;">
         <p><i class="fi-alert"></i>Por favor llena los campos</p>
     </div>
@@ -42,5 +44,5 @@ style="display: none;">
 
   </div>
 </form>
-</div>
+</div>');
 

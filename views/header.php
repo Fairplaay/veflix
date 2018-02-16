@@ -1,4 +1,5 @@
-<!doctype html>
+<?php
+print('<!doctype html>
 <html class="no-js" lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
@@ -15,8 +16,9 @@
 <body>
   <header>
     <!-- Menu -->
-<?php if ($_SESSION['ok']){ ?>
-    <div id="header-container" class="row align-middle">
+');
+if ($_SESSION['ok']){
+    print('<div id="header-container" class="row align-middle">
       <div class="small-12 large-4">
         <h1 class="text-center">VEFLIX</h1>
       </div>
@@ -31,13 +33,13 @@
       </div>
   </header>
     <!-- /menu -->
-<?php }
-else { ?>
-  <div id="header-container" class="row align-middle">
+    ');
+}
+else {
+  print('<div id="header-container" class="row align-middle">
     <div class="small-12">
       <h1 class="text-center">VEFLIX</h1>
-  </div>
-<?php };
-?>
-</div>
-<div class="row align-center">
+  </div>');
+ }
+print('</div>
+<div class="row align-center">');

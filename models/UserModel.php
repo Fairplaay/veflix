@@ -9,7 +9,7 @@ class UserModel extends Model
 			$$key = $value;
 		}
 		$this->query="REPLACE INTO users(user, email, name,birthday, pass, role) VALUES ('$user','$email','$name','$birthday'
-			,MD5('$pass'), 'role')";
+			,MD5('$pass'), '$role')";
 		$this->set_query();
 	}
 	public function get( $user = ''){

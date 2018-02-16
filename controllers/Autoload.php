@@ -1,11 +1,6 @@
 <?php
-
-/**
-* 
-*/
 class Autoload
 {
-	
 	function __construct()
 	{
 		spl_autoload_register(function($class_name)

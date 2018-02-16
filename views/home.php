@@ -21,11 +21,11 @@ $_SESSION['name'],
 $_SESSION['email'],
 $_SESSION['birthday'],
 $_SESSION['role']);
-?>
-<div class="small-12 text-center">
-<button type="button" class="button primary ">Enviar</button>
-<button type="button" class="button secondary">Enviar</button>
-<button type="button" class="button success">Enviar</button>
-<button type="button" class="button alert">Enviar</button>
-<button type="button" class="button warning">Enviar</button>
-</div>
+
+print('<div class="small-12 text-center">
+<button type="button" class="button primary ">mvc</button>
+<button type="button" class="button secondary">Foundation</button>
+<button type="button" class="button success">POO</button>
+<button type="button" class="button alert">Php</button>
+<button type="button" class="button warning">By JG</button>
+</div> ');

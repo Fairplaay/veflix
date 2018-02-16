@@ -42,4 +42,5 @@ abstract class Model{
 		$this->db_close();
 		return array_pop($this->row);
 	}
+	
 }
